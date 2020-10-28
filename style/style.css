@@ -18,6 +18,7 @@ body.body {
   margin: 0 auto;
   overflow: hidden;
 }
+/* --------------------Navbar--------------------------- */
 nav {
   height: 50px;
   width: 100%;
@@ -26,10 +27,16 @@ nav {
   top: 0;
   z-index: 100;
 }
-.logo {
-  float: left;
+.wrapper-navbar {
+  max-width: 1024px;
+  margin: 0 auto;
 }
-.logo a {
+/* -------- Logo ----------------*/
+.navbar-logo {
+  float: left;
+  position: relative;
+}
+.navbar-logo a {
   top: 10px;
   color: #232531;
   text-decoration: none;
@@ -42,36 +49,38 @@ nav {
   overflow: hidden;
   background-color: rgb(255, 87, 51);
 }
-.logo h1 {
+.navbar-logo p:first-child {
   margin-top: 3px;
   font-size: 1.5em;
   font-weight: 600;
 }
-.logo p {
+.navbar-logo p:last-child {
   font-size: 1.06em;
   font-weight: 600;
   text-transform: lowercase;
   margin-top: -5px;
 }
-.nav-wrapp {
+/* --------------Navigation -------------- */
+.navbar-wrapp {
   float: right;
   color: #fff;
 }
-.nav-wrapp li {
+.navbar-wrapp li {
   float: left;
   padding: 0 20px 0;
 }
-.nav-wrapp li:last-child {
+.navbar-wrapp li:last-child {
   margin-right: -20px;
 }
-.nav-wrapp a {
+.navbar-wrapp a {
   color: rgb(255, 87, 51);
   display: block;
   padding: 14px 3px 15px;
   text-decoration: none;
+  text-transform: uppercase;
   position: relative;
 }
-.nav-wrapp a::before {
+.navbar-wrapp a::before {
   content: "";
   display: block;
   position: absolute;
@@ -81,23 +90,31 @@ nav {
   transition: width 0.3s;
   margin-left: -2px;
 }
-.nav-wrapp a:hover::before {
+.navbar-wrapp a:hover::before {
   width: 100%;
 }
-.nav-wrapp .active-link a {
+.navbar-wrapp .active-link a {
   color: #fff;
 }
-.nav-wrapp .active-link a::before {
+.navbar-wrapp .active-link a::before {
   width: 100%;
   border-color: #fff;
 }
+/* --------------------Header--------------------------- */
 header {
   margin: 50px 0 0;
   background-color: #343a40;
   background: url("../img/bg-masthead.jpg") no-repeat center center;
   background-size: cover;
   overflow: hidden;
-
   width: 100%;
   height: 400px;
+}
+h1 {
+  width: 75%;
+  margin: 75px auto;
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
 }
