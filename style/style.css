@@ -5,20 +5,25 @@
 *::before {
   box-sizing: border-box;
 }
+
 .clearfix::after {
   content: "";
   display: block;
   clear: both;
 }
+
 body.body {
   font: 100% "Roboto", sans-serif;
   font-weight: 400;
+  color: #333;
 }
+
 .wrapper {
   max-width: 1140px;
   margin: 0 auto;
   overflow: hidden;
 }
+
 h1,
 h2,
 h3,
@@ -26,8 +31,14 @@ h4,
 h5,
 h6 {
   font-weight: 700;
+  color: #444;
 }
-/* --------------------Navbar--------------------------- */
+
+h2 {
+  font-size: 1.7em;
+}
+
+/* -----------------Navbar------------------ */
 nav {
   height: 50px;
   width: 100%;
@@ -36,15 +47,18 @@ nav {
   top: 0;
   z-index: 100;
 }
+
 .wrapper-navbar {
   max-width: 1024px;
   margin: 0 auto;
 }
-/* -------- Logo ----------------*/
+
+/* -------------------- Logo ----------------*/
 .navbar-logo {
   float: left;
   position: relative;
 }
+
 .navbar-logo a {
   top: 10px;
   color: #232531;
@@ -58,29 +72,35 @@ nav {
   overflow: hidden;
   background-color: rgb(255, 87, 51);
 }
+
 .navbar-logo p:first-child {
   margin-top: 3px;
   font-size: 1.5em;
   font-weight: 600;
 }
+
 .navbar-logo p:last-child {
   font-size: 1.06em;
   font-weight: 600;
   text-transform: lowercase;
   margin-top: -5px;
 }
+
 /* --------------Navigation -------------- */
 .navbar-wrapp {
   float: right;
   color: #fff;
 }
+
 .navbar-wrapp li {
   float: left;
   padding: 0 20px 0;
 }
+
 .navbar-wrapp li:last-child {
   margin-right: -20px;
 }
+
 .navbar-wrapp a {
   color: rgb(255, 87, 51);
   display: block;
@@ -89,6 +109,7 @@ nav {
   text-transform: uppercase;
   position: relative;
 }
+
 .navbar-wrapp a::before {
   content: "";
   display: block;
@@ -99,17 +120,21 @@ nav {
   transition: width 0.3s;
   margin-left: -2px;
 }
+
 .navbar-wrapp a:hover::before {
   width: 100%;
 }
+
 .navbar-wrapp .active-link a {
   color: #fff;
 }
+
 .navbar-wrapp .active-link a::before {
   width: 100%;
   border-color: #fff;
 }
-/* --------------------Header--------------------------- */
+
+/* --------------------Header----------------- */
 header {
   margin: 50px 0 0;
   background-color: #232531;
@@ -119,6 +144,7 @@ header {
   width: 100%;
   height: 400px;
 }
+
 h1 {
   width: 75%;
   margin: 75px auto;
@@ -126,26 +152,27 @@ h1 {
   text-align: center;
   color: #fff;
 }
-/* --------------------Features icons--------------------------- */
+
+/* --------------Features icons-------------- */
 .features-icons {
   width: 100%;
   background-color: #f8f9fa;
-  padding: 7rem 0;
+  padding: 5rem 0;
 }
+
 .features-icons_inner {
   width: 33.33%;
   float: left;
   min-width: 300px;
-  border: 1px solid #111;
   padding: 15px;
 }
+
 .features-icons_inner h2 {
   margin: 0 auto 20px;
   max-width: 20rem;
   text-align: center;
-  font-size: 1.7em;
-  color: #333;
 }
+
 .features-icons_inner p {
   max-width: 20rem;
   margin: auto;
@@ -153,17 +180,81 @@ h1 {
   font-weight: 300;
   font-size: 1.25em;
   line-height: 1.5;
-  color: #333;
 }
+
 .features-icons_inner .bi {
   display: block;
-  margin: 0 auto 20px;
+  margin: 0 auto 30px;
   width: 80px;
   height: 100px;
   fill: #007bff;
 }
 
+/*-----------------Main ------------------- */
+/* --------------- showcase ----------------*/
 
+.showcase .col-6 {
+  background-size: cover;
+}
 
+.row1 .col-6 {
+  height: 480px;
+  width: 50%;
+  float: right;
+}
+.row2 .col-6 {
+  height: 480px;
+  width: 50%;
+  float: left;
+}
 
+.row1 .comteiner {
+  padding: 8em 5em 7em 3em;
+  max-width: 570px;
+  float: right;
+}
+.row2 .comteiner {
+  padding: 8em 0em 7em 8em;
+  max-width: 570px;
+  float: left;
+}
+.showcase h2 {
+  text-align: left;
+  margin: 0 0 40px;
+  max-width: 570px;
+}
 
+.showcase p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+footer{
+  margin: auto;
+  background-color: #232531;
+  background: url("../img/bg-masthead.jpg") no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 150px;
+}
+/* ---------------------- Media -------------*/
+@media screen and (max-width: 920px) {
+  .features-icons_inner {
+    width: 100%;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .navbar-wrapp li {
+    padding: 0 8px 0;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  header {
+    height: 250px;
+  }
+}
