@@ -1,30 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
-body.body {
- font: 100% 'Roboto', sans-serif;;
-}
-.clearfix:after {
+.clearfix::after {
   content: "";
   display: block;
   clear: both;
 }
-.parent{
-  max-width: 1280px;
-  margin: 50px auto 0;
-  padding: 40px 0;
-  background: #aaa;
-  text-align: center;
+body.body {
+  font: 100% "Roboto", sans-serif;
 }
-.sizes{
-  background: #f5d782;
-  width: 300px;
-  height: 300px;
-  border: 5px solid #30c;
-  padding: 20px;
-  margin: 20px 20px;
-  display: inline-block;
-  box-sizing: border-box;
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+nav {
+  height: 50px;
+  width: 100%;
+  background-color: #232531;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+.logo {
+  float: left;
+}
+.logo a {
+  top:10px;
+  color: #232531;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0 0 8px;
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgb(255, 87, 51);
+}
+.logo h1 {
+  margin-top: 3px;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.logo p {
+  font-size: 1.06em;
+  font-weight: 600;
+  text-transform: lowercase;
+  margin-top: -5px;
+}
+.nav-wrapp {
+  float: right;
+  color: #fff;
+}
+.nav-wrapp li {
+  float: left;
+  padding: 0 20px 0;
+}
+.nav-wrapp li:last-child {
+  margin-right: -20px;
+}
+.nav-wrapp a {
+  color: rgb(255, 87, 51);
+  display: block;
+  padding: 14px 3px 15px;
+  text-decoration: none;
+  position: relative;
+}
+.nav-wrapp a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 1.5em;
+  border-bottom: 2px solid rgb(255, 87, 51);
+  transition: width 0.3s;
+  margin-left: -2px;
+}
+.nav-wrapp a:hover::before {
+  width: 100%;
+}
+.nav-wrapp .active-link a {
+  color: #fff ;
+}
+.nav-wrapp .active-link a::before {
+  width: 100%;
+  border-color: #fff;
+}
+header {
+  margin: 50px 0 0;
+  background-color: #343a40;
+  background: url(/img/bg-masthead.jpg) no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+
+  width: 100%;
+  height: 400px;
 }
