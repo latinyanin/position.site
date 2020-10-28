@@ -1,5 +1,7 @@
 {
   "liveServer.settings.host": "position.site",
   "liveServer.settings.file": "/public_html",
-  "liveServer.settings.CustomBrowser": "chrome"
+  "liveServer.settings.CustomBrowser": "chrome",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000
 }
