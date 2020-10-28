@@ -12,11 +12,20 @@
 }
 body.body {
   font: 100% "Roboto", sans-serif;
+  font-weight: 400;
 }
 .wrapper {
-  max-width: 1024px;
+  max-width: 1140px;
   margin: 0 auto;
   overflow: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
 }
 /* --------------------Navbar--------------------------- */
 nav {
@@ -103,7 +112,7 @@ nav {
 /* --------------------Header--------------------------- */
 header {
   margin: 50px 0 0;
-  background-color: #343a40;
+  background-color: #232531;
   background: url("../img/bg-masthead.jpg") no-repeat center center;
   background-size: cover;
   overflow: hidden;
@@ -114,7 +123,47 @@ h1 {
   width: 75%;
   margin: 75px auto;
   font-size: 3em;
-  font-weight: 700;
   text-align: center;
   color: #fff;
 }
+/* --------------------Features icons--------------------------- */
+.features-icons {
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 7rem 0;
+}
+.features-icons_inner {
+  width: 33.33%;
+  float: left;
+  min-width: 300px;
+  border: 1px solid #111;
+  padding: 15px;
+}
+.features-icons_inner h2 {
+  margin: 0 auto 20px;
+  max-width: 20rem;
+  text-align: center;
+  font-size: 1.7em;
+  color: #333;
+}
+.features-icons_inner p {
+  max-width: 20rem;
+  margin: auto;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.25em;
+  line-height: 1.5;
+  color: #333;
+}
+.features-icons_inner .bi {
+  display: block;
+  margin: 0 auto 20px;
+  width: 80px;
+  height: 100px;
+  fill: #007bff;
+}
+
+
+
+
+
