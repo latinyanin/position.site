@@ -190,7 +190,6 @@ h1 {
   fill: #007bff;
 }
 
-
 /*-----------------Main ------------------- */
 /* --------------- showcase ----------------*/
 
@@ -234,11 +233,10 @@ h1 {
 }
 /*------------------------- Testimonials -----------------------*/
 .testimonials {
-  height: 550px;
-  padding: 1em 0;
+  padding: 1em 0 2em;
   background-color: #e9e9e9;
 }
-.testimonials h2{
+.testimonials h2 {
   margin: 2em auto;
   text-align: center;
 }
@@ -246,17 +244,22 @@ h1 {
   margin: auto;
   text-align: center;
 }
-.testimonials img{
+.testimonials img {
   text-align: center;
-  width:200px;
+  width: 200px;
   height: 200px;
   border-radius: 50%;
+  box-shadow: 2px 1px 5px #333;
+  transition: box-shadow 0.5s;
 }
-.testimonials h3{
+.testimonials img:hover {
+  box-shadow: none;
+}
+.testimonials h3 {
   margin: 1em auto;
   font-size: 1.3em;
 }
-.testimonials p{
+.testimonials p {
   margin: 0 auto;
   font-size: 1em;
   font-style: italic;
