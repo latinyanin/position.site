@@ -96,13 +96,6 @@ nav {
 
 .dropbtn {
   display: none;
-  padding: 13px 20px 13px;
-  border: none;
-  background-color: rgb(255, 87, 51);
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 18px;
-  cursor: pointer;
 }
 
 .navbar-wrapp li {
@@ -266,7 +259,7 @@ h1 {
   text-align: center;
 }
 
-.testimonials .col-4>div {
+.testimonials .col-4 > div {
   margin: auto;
   text-align: center;
 }
@@ -310,7 +303,7 @@ footer {
   min-height: 50px;
 }
 
-footer>p {
+footer > p {
   text-align: center;
   margin: 20px auto;
   color: #333;
@@ -332,9 +325,15 @@ footer>p {
   .dropbtn {
     display: block;
     border: none;
+    padding: 13px 20px 13px;
+    background-color:  rgb(255, 87, 51);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    cursor: pointer;
   }
 
-  .dropbtn:hover+.navbar-wrapp,
+  .dropbtn:hover + .navbar-wrapp,
   .navbar-wrapp:hover {
     display: block;
   }
