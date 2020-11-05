@@ -321,6 +321,7 @@ footer>p {
 
   .dropbtn {
     display: block;
+    border: none;
   }
 
   .dropbtn:hover+.navbar-wrapp,
