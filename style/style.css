@@ -96,10 +96,13 @@ nav {
 
 .dropbtn {
   display: none;
-  padding: 16px 20px 16px;
+  padding: 13px 20px 13px;
   border: none;
   background-color: rgb(255, 87, 51);
   color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  cursor: pointer;
 }
 
 .navbar-wrapp li {
@@ -114,10 +117,11 @@ nav {
 .navbar-wrapp a {
   color: rgb(255, 87, 51);
   display: block;
-  padding: 14px 3px 15px;
+  padding: 12px 3px 15px;
   text-decoration: none;
   text-transform: uppercase;
   position: relative;
+  font-size: 18px;
 }
 
 .navbar-wrapp a::before {
